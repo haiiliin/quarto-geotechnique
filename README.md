@@ -1,6 +1,6 @@
 # quarto-geotechnique
 
-A Quarto format for [Geotechnique](https://www.icevirtuallibrary.com/journal/jgeot) journal. Guide for authors can be found [here](https://www.icevirtuallibrary.com/page/authors/preparing-your-manuscript/guidelines-engineering).
+A [Quarto](https://quarto.org/) template for [Geotechnique](https://www.icevirtuallibrary.com/journal/jgeot) journal. Guide for authors can be found [here](https://www.icevirtuallibrary.com/page/authors/preparing-your-manuscript/guidelines-engineering).
 
 ## Creating a New Article
 
