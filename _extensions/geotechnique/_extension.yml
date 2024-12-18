@@ -6,6 +6,7 @@ contributes:
   formats:
     pdf:
       include-in-header:
+        - two-column-longtable.tex
         - text: |
             \usepackage{moreverb}
             \usepackage[colorlinks,bookmarks=false,citecolor=red,urlcolor=red]{hyperref}
