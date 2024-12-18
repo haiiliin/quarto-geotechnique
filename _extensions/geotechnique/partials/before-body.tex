@@ -1,0 +1,32 @@
+% Title
+\runningheads{$journal.heading$}{$journal.name_tag$}
+\title{$title$}
+
+% Authors
+\author{
+$for(by-author)$$by-author.name.literal$$for(by-author.affiliations)$\addressnum{$it.number$}$sep$$endfor$~$endfor$
+}
+
+% Affiliations
+\address{
+$for(by-affiliation)$
+\addressnum{$it.number$} $it.name$
+$endfor$
+}
+
+% Abstract
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+% Keywords
+$if(keywords)$
+\keywords{
+    $for(keywords/allbutlast)$$keywords$; $endfor$
+    $for(keywords/last)$$keywords$$endfor$
+}
+$endif$
+
+\maketitle
