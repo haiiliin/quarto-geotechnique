@@ -1,9 +1,8 @@
 ---
-title: Quarto-geotechnique Template
+title: Quarto Geotechnique Journal Template
 format:
   geotechnique-pdf:
-    keep-tex: true  
-  geotechnique-html: default
+    keep-tex: true
 author:
   - name: Sarah Malloc
     corresponding: true
@@ -22,7 +21,7 @@ author:
     affiliations:
       - Another Affiliation
 abstract: |
-  This document is a template demonstrating the Quarto-geotechnique format.
+  This document is a template demonstrating the geotechnique format.
 keywords: [template, demo]
 bibliography: bibliography.bib  
 ---
