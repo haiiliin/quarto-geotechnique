@@ -1,9 +1,0 @@
-\usepackage{float}
-\makeatletter
-\let\oldlt\longtable
-\let\endoldlt\endlongtable
-\def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
-\def\longtable@i[#1]{\begin{table*}[!htb]\onecolumn\vspace{-5pt}\oldlt[#1]}
-\def\longtable@ii{\begin{table*}[!htb]\onecolumn\oldlt}
-\def\endlongtable{\bottomrule\endoldlt\vspace{-15pt}\twocolumn\end{table*}}
-\makeatother
