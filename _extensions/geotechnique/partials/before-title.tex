@@ -1,29 +1,18 @@
-\usepackage{float}
+\usepackage{booktabs}
 
-\makeatletter
-\let\oldlt\longtable
-\let\endoldlt\endlongtable
-\def\longtable{\@ifnextchar[\longtable@i \longtable@ii}
-\def\longtable@i[#1]{
-    \begin{table}[H]
-    \onecolumn
-    \vspace{-15pt}
-    \begin{minipage}{0.47\textwidth}
-    \oldlt[#1]
-}
-\def\longtable@ii{
-    \begin{table}[H]
-    \onecolumn
-    \vspace{-15pt}
-    \begin{minipage}{0.47\textwidth}
-    \oldlt
+\def\longtable{
+    \table[$if(table.pos)$$table.pos$$else$!htb$endif$]
+    \caption{\tcaption}\vspace{-15pt}
+    \label{\tlabel}
+    \renewcommand{\caption}[1]{}
+    \renewcommand{\label}[1]{}
+    \tabular
 }
 \def\endlongtable{
     \bottomrule
-    \endoldlt
-    \end{minipage}
-    \vspace{-10pt}
-    \twocolumn
-    \end{table}
+    \endtabular
+    \endtable
 }
-\makeatother
+\let\tabularnewline\relax
+\let\endfirsthead\iffalse
+\let\endlastfoot\fi
