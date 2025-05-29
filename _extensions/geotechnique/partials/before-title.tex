@@ -1,5 +1,8 @@
 \usepackage{booktabs}
 
+\def\tcaption{Please redefine table caption and label before the table definition using \texttt{\textbackslash tcaption\{Table caption\}} and \texttt{\textbackslash tlabel\{tbl-label\}}.}
+\def\tlabel{tbl-label}
+
 \def\longtable{
     \begin{$if(table.env)$$table.env$$else$table$endif$}[$if(table.pos)$$table.pos$$else$!htb$endif$]
     \caption{\tcaption}\vspace{-15pt}
