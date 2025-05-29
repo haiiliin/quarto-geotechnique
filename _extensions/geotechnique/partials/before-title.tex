@@ -1,7 +1,7 @@
 \usepackage{booktabs}
 
 \def\longtable{
-    \table[$if(table.pos)$$table.pos$$else$!htb$endif$]
+    \begin{$if(table.env)$$table.env$$else$table$endif$}[$if(table.pos)$$table.pos$$else$!htb$endif$]
     \caption{\tcaption}\vspace{-15pt}
     \label{\tlabel}
     \renewcommand{\caption}[1]{}
@@ -11,7 +11,7 @@
 \def\endlongtable{
     \bottomrule
     \endtabular
-    \endtable
+    \end{$if(table.env)$$table.env$$else$table$endif$}
 }
 \let\tabularnewline\relax
 \let\endfirsthead\iffalse

@@ -31,6 +31,7 @@ format:
 
 - `journal.heading`: The heading appears in the header of even pages.
 - `journal.name_tag`: The name tag appears in the header of odd pages.
+- `table.env`: The environment used for tables. Default is `table`. You can also use `table*` for two-column tables.
 - `table.pos`: The position of tables in the document. Default is `!htb`.
   
   Because `longtable` does not support twocolumn document, the `longtable` environment is redefined to use the `tabular` environment. The drawback is that you have to specify the table caption and label manually before each table. For example:
