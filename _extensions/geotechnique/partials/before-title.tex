@@ -4,7 +4,7 @@
 \def\tlabel{tbl-label}
 
 \def\longtable{
-    \begin{$if(table.env)$$table.env$$else$table$endif$}[$if(table.pos)$$table.pos$$else$!htb$endif$]
+    \begin{$if(table.env)$$table.env$$else$table$endif$}[$table.pos$]
     \caption{\tcaption}\vspace{-15pt}
     \label{\tlabel}
     \renewcommand{\caption}[1]{}
